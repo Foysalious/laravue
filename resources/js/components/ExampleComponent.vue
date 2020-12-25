@@ -1,13 +1,15 @@
 <template>
-   <v-container>
-       <v-alert type="info">I am Vuetify Component</v-alert>
-   </v-container>
+  
+   
+      <router-view></router-view>
+    
+
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
-    }
+export default {
+  mounted() {
+    console.log("Component mounted.");
+  },
+};
 </script>

@@ -20,6 +20,8 @@ import router from './router'
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 import Example from './components/ExampleComponent'; 
+import LoginComponent from './components/LoginComponent'; 
+import AdminComponent from './components/AdminComponent'; 
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -32,6 +34,8 @@ import Example from './components/ExampleComponent';
     router,
     vuetify,
     components:{
-    'example-component': Example
+    'example-component': Example,
+    'LoginComponent': LoginComponent,
+    'AdminComponent': AdminComponent,
     }
 });
